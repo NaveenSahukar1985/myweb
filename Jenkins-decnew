@@ -3,9 +3,7 @@ pipeline{
     environment{
         PATH = "/opt/maven3/bin:$PATH"
     }
-    tools{
-        maven 'maven-3.5.2'
-    }
+    
     stages{
         stage("Git Checkout"){
             steps{
